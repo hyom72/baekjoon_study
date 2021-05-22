@@ -4,3 +4,13 @@
 
 # 첫 번째 줄에 테스트케이스의 수가 주어진다.
 # 각 줄에는 물건의 원래가격이 소수점 둘째자리까지 주어진다.
+
+n = int(input())
+number = []
+
+for i in range(n) :
+    score = float(input())
+    number.append(score)
+
+for i in range(n) :
+    print("$%.2f" %(number[i] - number[i]*(1/5)))

@@ -8,6 +8,8 @@
 # 모든 좌석을 전부 촬영하도록 CCTV를 배치할 때,n 최소 몇 개의 CCTV가 필요할까?
 # INPUT) 첫 번째 줄에 좌석의 세로 크기, 가로 크기 R, C와 한 대의 CCTV가 수용할 수 있는 
 # 범위 N이 주어진다. (1 ≤ R, C, N ≤ 1,000,000)
+import math
+
 r, c, n = map(int, input().split())
 
-print(min(r,c) + abs(r-c))
+print(math.ceil(r/n) * math.ceil(c/n))

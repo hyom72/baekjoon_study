@@ -15,5 +15,5 @@ elif(a-b == c) :
     print("%d-%d=%d" % (a,b,c))
 elif(a*b == c) :
     print("%d*%d=%d" % (a,b,c))
-elif(a/b == c) :
-    print("%d/%d=%f" % (a,b,c))
+elif(a//b == c) :
+    print("%d//%d=%f" % (a,b,c))
